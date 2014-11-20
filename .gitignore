@@ -1,0 +1,7 @@
+bower_components
+node_modules
+_dev/less/variables.less
+assets/css/*
+assets/js/*
+assets/fonts/*
+!.gitkeep
