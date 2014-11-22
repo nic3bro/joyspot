@@ -16,7 +16,21 @@
     height: 73px;
     border-bottom: 2px solid #f0ac9a;
     line-height: 73px;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: center;
+    a {
+        color: @brand-orange;
+        text-decoration: none;
+    }
+    .logo {
+        width: 29px;
+        height: 27px;
+        display: inline-block;
+        margin-right: 18px;
+        top: 5px;
+        position: relative;
+        background: url(../images/sprite.png) -3px -5px;
+    }
 }
 
 #site-content {
@@ -90,18 +104,40 @@
     }
 }
 
+.btn-primary {
+    width: 209px;
+    margin: 0 18px;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 0;
+    margin: 5px;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    &:hover {
+        border: 2px solid #efefef;
+    }
+}
+
+.btn-default {
+    width: 209px;
+    margin: 0 18px;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0;
+    margin: 5px;
+    background: transparent;
+    color: @brand-orange;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    &:hover {
+        border: 2px solid #efefef;
+        color: @brand-orange;
+    }
+}
+
+
 .main-buttons {
     text-align: center;
-    .btn-long {
-        width: 209px;
-        margin: 0 13px;
-        font-size: 16px;
-        line-height: 46px;
-        padding: 0;
-        margin: 5px;
-        border: 2px solid #efefef;
-        border-radius: 10px;
-    }
     @media (max-width: @screen-xs-max) {
         line-height: 65px;
     } 
@@ -124,6 +160,33 @@
 .social-links {
     text-align: center;
     height: 76px;
+    .foursquare {
+        width: 16px;
+        height: 16px;
+        background: url(../images/sprite.png) 73px -14px;
+        display: inline-block;
+        margin-right: 5px;
+        top: 3px;
+        position: relative;
+    }
+    .facebook {
+        width: 16px;
+        height: 16px;
+        background: url(../images/sprite.png) 46px -14px;
+        display: inline-block;
+        margin-right: 5px;
+        top: 3px;
+        position: relative;
+    }
+    .vk {
+        width: 16px;
+        height: 16px;
+        background: url(../images/sprite.png) 19px -14px;
+        display: inline-block;
+        margin-right: 5px;
+        top: 3px;
+        position: relative;
+    }
     a {
         margin: 0 13px;
     }
@@ -150,5 +213,28 @@
         p {
             margin-bottom: 0;
         }
+    }
+}
+
+.page-header {
+    text-align: center;
+    line-height: 85px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    border:none;
+}
+
+.showplace {
+    position: relative;
+    margin-bottom: 25px;
+    img {
+        display: block;
+        margin: auto;
+    }
+    .showplace-caption {
+        text-align: center;
+        line-height: 50px;
     }
 }
