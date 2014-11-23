@@ -237,7 +237,48 @@
 
 .rooms-photos {
     display:block;
-    width:850px;
+    max-width:825px;
     margin:0 auto;
     padding-bottom:30px;
+    .carousel-inner {
+        img {
+            width: 100%;
+        }
+    }
 }
+
+.carousel-thumbnails {
+    max-width: 843px;
+    margin: 0 -9px -9px;
+    .thumbnail.active > a, .thumbnail:focus > a, .thumbnail:hover > a {
+        border-color: #f0ac9a;
+    }
+    .thumbnail {
+    float:left;
+    margin: 0 9px;
+    padding: 0;
+    border: none;
+    a {
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        background-color: #fff;
+        overflow: hidden;
+        border: 2px solid #efefef;
+        height: 103px;
+        width: 102px;
+        position:relative;
+        border-radius: 4px;
+    }
+    img {
+        max-width:200%;
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+}
+
