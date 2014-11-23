@@ -35,12 +35,41 @@
 
 #site-content {
     min-height: 348px;
-    border-bottom: 1px solid #f0ac9a;
+    .carousel-inner {
+        .item {
+            max-height: 348px;
+        }
+        .carousel-caption {
+            font-size: 16px;
+        }
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+    .carousel-title {
+        top: 20px;
+        left: 50%;
+        width: 60%;
+        margin-left: -30%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        .carousel-title-inner {
+            color: white;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            display: inline-block;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 #site-gmap {
     height: 346px;
-    border-bottom: 2px solid #f0ac9a;
     border-top: 2px solid #f0ac9a;
     position: relative;
     iframe {
@@ -50,6 +79,7 @@
 }
 
 #site-footer {
+    border-top: 2px solid #f0ac9a;
     text-align: center;
     line-height: 45px;
     font-size: 12px;
@@ -58,40 +88,6 @@
     }
 }
 
-
-.carousel-inner {
-    
-    .item {
-        max-height: 348px;
-    }
-    .carousel-caption {
-        font-size: 16px;
-    }
-    img {
-        width:100%;
-        height:auto;
-    }
-}
-
-.carousel-title {
-    top: 20px;
-    left: 50%;
-    width: 60%;
-    margin-left: -30%;
-    position: absolute;
-    z-index: 1;
-    text-align: center;
-    .carousel-title-inner {
-        color: white;
-        padding: 10px 20px;
-        background: rgba(0, 0, 0, 0.5);
-        text-align: center;
-        display: inline-block;
-        p {
-            margin-bottom: 0;
-        }
-    }
-}
 
 
 .translate-links {
@@ -237,4 +233,11 @@
         text-align: center;
         line-height: 50px;
     }
+}
+
+.rooms-photos {
+    display:block;
+    width:850px;
+    margin:0 auto;
+    padding-bottom:30px;
 }
