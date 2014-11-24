@@ -6219,14 +6219,10 @@ button.close {
 #site-content .carousel-title .carousel-title-inner p {
   margin-bottom: 0;
 }
-#site-gmap {
+#gmap {
   height: 346px;
   border-top: 2px solid #f0ac9a;
   position: relative;
-}
-#site-gmap iframe {
-  height: 100%;
-  width: 100%;
 }
 #site-footer {
   border-top: 2px solid #f0ac9a;
@@ -6338,6 +6334,9 @@ button.close {
     line-height: 20px;
   }
 }
+.site-gmap {
+  position: relative;
+}
 .gmap-title {
   top: 20px;
   left: 50%;
@@ -6382,7 +6381,7 @@ button.close {
   display: block;
   max-width: 825px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 78px;
 }
 .rooms-photos .carousel-inner img {
   width: 100%;
@@ -6422,4 +6421,53 @@ button.close {
   top: 0;
   bottom: 0;
   margin: auto;
+}
+.back-btn {
+  text-align: center;
+  padding-bottom: 173px;
+}
+.adress,
+.contacts,
+.form-title {
+  text-align: center;
+  font-size: 16px;
+  color: #434343;
+}
+.adress p,
+.contacts p,
+.form-title p {
+  margin: 0;
+}
+.adress {
+  padding-top: 45px;
+}
+.contacts,
+.form-title {
+  padding-top: 65px;
+}
+.contact-form {
+  max-width: 630px;
+  max-height: 485px;
+  background: #fff2cc;
+  padding: 19px;
+  margin: 25px auto 35px;
+  position: relative;
+}
+.contact-form .form-input {
+  max-width: 475px;
+  margin: auto;
+}
+.contact-form input {
+  width: 100%;
+  text-align: center;
+  height: 46px;
+  margin: 13px auto;
+  border: 2px solid #6d9eeb;
+}
+.contact-form textarea {
+  width: 100%;
+  text-align: center;
+  height: 112px;
+  margin: 13px auto;
+  border: 2px solid #6d9eeb;
 }
