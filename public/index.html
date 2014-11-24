@@ -72,7 +72,7 @@
         <div class="main-buttons">
           <a href="" class="btn btn-primary btn-long">Book now</a>
           <a href="rooms-photots.html" class="btn btn-primary btn-long">Rooms Photos</a>
-          <a href="" class="btn btn-primary btn-long">Contact Us</a>
+          <a href="contact-us.html" class="btn btn-primary btn-long">Contact Us</a>
         </div>
 
         <div class="main-links">
@@ -88,19 +88,41 @@
       </div>
       <!-- End #site-content -->
 
-      <div id="site-gmap">
-      <div class="gmap-title">
-        <div class="gmap-title-inner">
-          <p><b>Address:</b></p>
-          <p>Tsereteli St Kutaisi 4600 Georgia</p>
+      <div class="site-gmap">
+        <div class="gmap-title">
+          <div class="gmap-title-inner">
+            <p><b>Address:</b></p>
+            <p>Tsereteli St Kutaisi 4600 Georgia</p>
+          </div>
         </div>
+        <div id="gmap"></div>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5904.7985274471575!2d42.704774365487445!3d42.26999980662308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x5d56d3b70ecdee2b!2sSmart+Finance+%231+Service-Center!5e0!3m2!1suk!2sua!4v1416486781453" frameborder="0" style="border:0"></iframe></div>
       <div id="site-footer">
         <p>Developed by <b>JoySpot Hostel Friends</b></p>
       </div>
     </div>
   </div>
   <script src="assets/js/scripts.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+  function initialize() {
+    var gmap = document.getElementById('gmap');
+    var options = {
+      center: new google.maps.LatLng(42.26980, 42.70457),
+      zoom: 15,
+      scrollwheel: false,
+      disableDefaultUI:true,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    var map = new google.maps.Map(gmap, options);
+    var marker = new google.maps.Marker({
+      position:options.center,
+    });
+
+    marker.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
 </body>
 </html>
