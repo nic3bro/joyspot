@@ -6221,7 +6221,6 @@ button.close {
 }
 #gmap {
   height: 346px;
-  border-top: 2px solid #f0ac9a;
   position: relative;
 }
 #site-footer {
@@ -6335,6 +6334,7 @@ button.close {
   }
 }
 .site-gmap {
+  border-top: 2px solid #f0ac9a;
   position: relative;
 }
 .gmap-title {
@@ -6452,6 +6452,7 @@ button.close {
   padding: 19px;
   margin: 25px auto 35px;
   position: relative;
+  text-align: center;
 }
 .contact-form .form-input {
   max-width: 475px;
@@ -6470,4 +6471,28 @@ button.close {
   height: 112px;
   margin: 13px auto;
   border: 2px solid #6d9eeb;
+}
+.about-photo {
+  position: relative;
+  margin: auto auto 25px;
+  max-width: 435px;
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+}
+.about-photo .caption {
+  text-align: center;
+  line-height: 50px;
+}
+.about-content {
+  margin: auto auto 20px;
+  max-width: 835px;
+}
+.about-content p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.adress + .back-btn {
+  padding-top: 65px;
 }
